@@ -12,13 +12,13 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body class="flex flex-col h-full">
     <Header />
-    <main>
+    <main class="flex-1">
       <section>
         <ul>
           {
